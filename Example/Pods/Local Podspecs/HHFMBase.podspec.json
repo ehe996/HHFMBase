@@ -1,0 +1,22 @@
+{
+  "name": "HHFMBase",
+  "version": "0.1.0",
+  "summary": "A short description of HHFMBase.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/hejunhe/HHFMBase",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "hejunhe": "hejunhe@koolearn.com"
+  },
+  "source": {
+    "git": "https://github.com/hejunhe/HHFMBase.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "HHFMBase/Classes/**/*"
+}

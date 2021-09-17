@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'HHFMBase'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of HHFMBase.'
+  s.summary          = 'HHFMBase is a base lib'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -29,8 +29,18 @@ TODO: Add long description of the pod here.
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
+  #这里s.source_files的意思是去上面那个git仓库里，去下载HHFMBase/Classes/这个目录下的文件
+# s.source_files = 'HHFMBase/Classes/**/*'
 
-  s.source_files = 'HHFMBase/Classes/**/*'
+#如果我们想把组件中某些模块再细分的话，就可以采用这样的方式
+#例如这里的Category子模块，指的是HHFMBase/Classes/Category/ 路径下的内容
+    s.subspec 'Category' do |category|
+        category.source_files = 'HHFMBase/Classes/Category/**/*'
+    end
+    s.subspec 'NetWork' do |network|
+        network.source_files = 'HHFMBase/Classes/NetWork/**/*'
+        network.dependency = 'AFNetWorking' #添加NetWork组件依赖的其他库
+    end
   
   # s.resource_bundles = {
   #   'HHFMBase' => ['HHFMBase/Assets/*.png']

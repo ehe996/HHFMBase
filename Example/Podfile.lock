@@ -1,0 +1,16 @@
+PODS:
+  - HHFMBase (0.1.0)
+
+DEPENDENCIES:
+  - HHFMBase (from `../`)
+
+EXTERNAL SOURCES:
+  HHFMBase:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  HHFMBase: cbf4fb2d7cfccd7b22d41396012ad496aefab638
+
+PODFILE CHECKSUM: fd0802aa4ad3600caf7d6783284f5aee4f632c90
+
+COCOAPODS: 1.5.3
